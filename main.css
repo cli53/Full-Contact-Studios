@@ -1,0 +1,49 @@
+body {
+  font-family: "Circular", -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue", sans-serif;
+}
+
+#hero1 {
+  background-image: url('Images/hero1.jpg');
+  background-size: cover;
+  height: 600px;
+  color: #FFFFFF;
+  padding-top: 10%;
+  padding-left: 5%;
+}
+
+#title {
+  margin-bottom: 2rem;
+}
+
+#hero2 {
+background-image: url('Images/Training.jpg');
+background-size: cover;
+height: 900px;
+color: #FFFFFF;
+}
+
+#main {
+  height: 650px;
+}
+
+#mainHeader {
+  padding: 50;
+}
+
+.mainContent {
+  text-align: center;
+}
+.mainTitles {
+  text-align: center;
+  padding: 10;
+}
+.mainPara {
+  font-size: .7em;
+  margin: 1em;
+  text-align: center;
+}
+
+.mainimg {
+  width: 100px;
+  height:100px;
+}
