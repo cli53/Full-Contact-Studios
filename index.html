@@ -12,17 +12,16 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
             crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!--External fonts-->
-        <!--Page Icon-->
-        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+
 
     </head>
 
     <body>
       <div id="hero1" class="jumbotron-fluid">
         <h1 id="title" class="display-2">Full Contact Studios</h1>
-        <p class="lead">Everything Muay Thai in NYC</p>
-        <p class="lead">Navigating through gyms, equipment, and resources</p>
+        <p class="lead hero1para">Muay Thai in NYC</p>
+        <p class="lead hero1para">Navigating through gyms, equipment, and resources</p>
         <p class="lead">
           <a class="btn btn-danger btn-md text-uppercase" id="hero1btn" href="#" role="button">Learn more</a>
         </p>
@@ -39,6 +38,9 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#">Training</a>
             </li>
             <li class="nav-item">
@@ -47,30 +49,40 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Events</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
           </ul>
         </div>
       </nav>
+      <!--Mission Section-->
+      <div id="hero3" class="jumbotron-fluid">
+        <h1 id="missionHeader" class="display-3">Our Mission<h1>
+
+          <p id="missionPara" class="lead"> We strive to empower Muay Thai culture in NYC and motivate enthuatists to realize their goals through diverse gyms, events and support.
+            To do this, we rely on our community to help us build an exceptional resource center as we live out our passion to give you the most relevant information.
+      </div>
 <!--Learn More -->
 <div id="main" class="jumbotron-fluid">
   <section class="container-fluid">
     <h1 id="mainHeader" class="text-center">Home of NYC Muay Thai<h2>
       <div class="row">
         <div class="col-md-4 mainContent">
-           <img class="mainimg" src="Images/boxingbag.svg">
+           <img class="mainimg" src="Images/boxingbag.svg" alt="Gym Image">
           <h2 class="mainTitles">Gyms</h2>
           <p class="mainPara">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
              Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
              Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
            </div>
              <div class="col-md-4 mainContent">
-               <img class="mainimg" src="Images/gear.svg">
+               <img class="mainimg" src="Images/gear1.svg" alt="Gear Image">
                <h2 class="mainTitles">Equipment</h2>
                <p class="mainPara">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
                  Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
                  Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
              </div>
              <div class="col-md-4 mainContent">
-                <img class="mainimg" src="Images/events.svg">
+                <img class="mainimg" src="Images/events1.svg" alt="Event Image">
                <h2 class="mainTitles">Events</h2>
                <p class="mainPara">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
                  Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
@@ -79,12 +91,47 @@
            </div>
   </section>
 </div>
-<!--Training Section-->
+<!--Gym  Section-->
         <div id="hero2" class="jumbotron-fluid">
-          <h1 class="display-3">Hello, world!</h1>
-          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-          <hr class="m-y-md">
-          <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+          <h1 class="display-3">Step 1: Find your gym</h1>
+          <p class="lead">It's a difficult choice, but we're here to help!</p>
+          <br class="m-y-md">
+          <p>Top Muay Gyms in NYC to check out:</p>
+          <ul id="gymlist">
+            <li>Coban's Muay Thai</li>
+            <li>Five Points Academy</li>
+            <li>The WAT</li>
+            <li>Chok Sabai Gym</li>
+            <li>Sitan Muay Thai</li>
+            <li>Evolution Muay Thai</li>
+            <li>Kings Thai Gym</li>
+          </ul>
         </div>
+<!--Gear Section-->
+<div id="hero4" class="jumbotron-fluid">
+  <section class="container-fluid">
+<img id="gearimg"  src="Images/helmet.svg" alt="headgear">
+    <h1 id="mainHeader" class="text-center">SUIT UP!<h2>
+
+      <div class="row">
+        <div class="col-md-6 mainContent">
+           <img class="mainimg" src="Images/gear.svg" alt="Gym Image">
+          <h2 class="mainTitles">New York Vendors</h2>
+          <p id="gearPara"class="mainPara">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+             Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+             Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+           </div>
+
+             <div class="col-md-6 mainContent">
+                <img class="mainimg" src="Images/events.svg" alt="Event Image">
+               <h2 class="mainTitles">International Vendors</h2>
+               <p id="gearPara" class="mainPara">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+                 Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+                 Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+             </div>
+           </div>
+  </section>
+</div>
+
 
     </body>

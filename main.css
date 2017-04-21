@@ -2,28 +2,41 @@ body {
   font-family: "Circular", -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue", sans-serif;
 }
 
+#title {
+  margin-bottom: 2rem;
+}
 #hero1 {
   background-image: url('Images/hero1.jpg');
   background-size: cover;
   height: 600px;
   color: #FFFFFF;
-  padding-top: 10%;
+  padding-top: 5%;
   padding-left: 5%;
+  animation: fadeIn 3s ease-in-out 1 forwards;
+  letter-spacing: .2em;
 }
 
-#title {
-  margin-bottom: 2rem;
+.btn-danger {
+  margin-top: 3%;
 }
 
-#hero2 {
-background-image: url('Images/Training.jpg');
-background-size: cover;
-height: 900px;
-color: #FFFFFF;
+.navbar {
+box-shadow: 1px 2px 16px -3px rgba(0,0,0,0.75);
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 #main {
-  height: 650px;
+  height: 800px;
+  background-color: #f7f8fb;
 }
 
 #mainHeader {
@@ -41,9 +54,60 @@ color: #FFFFFF;
   font-size: .7em;
   margin: 1em;
   text-align: center;
+  font-weight: 400;
+  letter-spacing: 0.1em;
 }
 
 .mainimg {
   width: 100px;
   height:100px;
+}
+
+#hero2 {
+background-image: url('Images/Training.jpg');
+background-size: cover;
+height: 650px;
+color: #FFFFFF;
+padding-top: 5%;
+padding-left: 5%;
+}
+
+#hero3 {
+  height: 900px;
+  background-image: url('Images/hero2.jpeg');
+  background-size: cover;
+  color: #FFFFFF;
+  padding-top: 5%;
+  padding-left: 5%;
+}
+
+#missionHeader {
+margin-bottom: 5%;
+}
+
+#missionPara {
+  width: 400px;
+  line-height: 2em;
+  letter-spacing: .2em;
+}
+
+#gymlist li {
+  padding-top: 18px;
+}
+
+#hero4 {
+  height: 650px;
+}
+#gearPara {
+margin: 10px 70px 10px 70px;
+}
+
+#gearimg {
+  height: 100px;
+  width: 100%;
+  margin: 50px 0px 5px 0px;
+}
+
+#mainHeader {
+padding: 25 0 50 0;
 }
