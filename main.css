@@ -1,29 +1,69 @@
-body {
-  font-family: "Circular", -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue", sans-serif;
+@font-face {
+    font-family: 'pacifico';
+    src: url('pacifico.ttf');
 }
 
-#title {
-  margin-bottom: 2rem;
+html, body {
+   height: 100%;
 }
-#hero1 {
-  background-image: url('Images/hero1.jpg');
-  background-size: cover;
-  height: 600px;
+
+body {
+    font-family: "Circular", -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue", sans-serif;
+}
+
+
+.hero {
   color: #FFFFFF;
   padding-top: 5%;
-  padding-left: 5%;
-  animation: fadeIn 3s ease-in-out 1 forwards;
-  letter-spacing: .2em;
+  background-size: cover;
 }
 
-.btn-danger {
-  margin-top: 3%;
+/*GENERAL*/
+
+.herotitles {
+    margin-bottom: 5%;
 }
+
+.lead {
+    width: 400px;
+    line-height: 2em;
+    letter-spacing: .2em;
+}
+/* LANDING HERO 1*/
+
+#hero1 {
+    background-image: url('Images/hero1.jpg');
+    height: 600px;
+    animation: fadeIn 3s ease-in-out 1 forwards;
+    padding-left: 5%;
+}
+
+.btn {
+    letter-spacing: 0.2em;
+}
+/* Include mouse pointer for enter
+#readMeButton:hover {
+
+}
+*/
+.btn-danger {
+    margin-top: 3%;
+}
+
+
+/*NAVBAR*/
 
 .navbar {
-box-shadow: 1px 2px 16px -3px rgba(0,0,0,0.75);
+    box-shadow: 1px 2px 16px -3px rgba(0, 0, 0, 0.75);
 }
 
+#brand {
+  font-family: 'pacifico';
+  ransition: color 500ms ease;
+}
+#brand:hover {
+  color: #8b4513;
+}
 
 @keyframes fadeIn {
     0% {
@@ -34,80 +74,162 @@ box-shadow: 1px 2px 16px -3px rgba(0,0,0,0.75);
     }
 }
 
-#main {
-  height: 800px;
-  background-color: #f7f8fb;
-}
 
-#mainHeader {
-  padding: 50;
-}
-
-.mainContent {
-  text-align: center;
-}
-.mainTitles {
-  text-align: center;
-  padding: 10;
-}
-.mainPara {
-  font-size: .7em;
-  margin: 1em;
-  text-align: center;
-  font-weight: 400;
-  letter-spacing: 0.1em;
-}
-
-.mainimg {
-  width: 100px;
-  height:100px;
-}
-
-#hero2 {
-background-image: url('Images/Training.jpg');
-background-size: cover;
-height: 650px;
-color: #FFFFFF;
-padding-top: 5%;
-padding-left: 5%;
-}
+/* MISSION HERO 3*/
 
 #hero3 {
-  height: 900px;
-  background-image: url('Images/hero2.jpeg');
-  background-size: cover;
-  color: #FFFFFF;
-  padding-top: 5%;
-  padding-left: 5%;
+    height: 900px;
+    background-image: url('Images/hero2.jpeg');
+    padding-left: 5%;
 }
 
-#missionHeader {
-margin-bottom: 5%;
+#info {
+    height: 700px;
+    background-color: #f7f8fb;
 }
 
-#missionPara {
-  width: 400px;
-  line-height: 2em;
-  letter-spacing: .2em;
+
+/*INFORMATION SECTION*/
+
+#infoHeader {
+    padding: 20px 50px 50px 50px;
 }
+
+.infoContent {
+    text-align: center;
+}
+
+.infoimg {
+    width: 100px;
+    height: 100px;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+}
+
+.infoTitles {
+    text-align: center;
+    padding: 10;
+}
+
+.infoPara {
+    font-size: .7em;
+    margin: 1em;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+}
+
+
+/*GYM HERO 2*/
+
+#hero2 {
+    background-image: url('Images/Training.jpg');
+    padding-left: 5%;
+    height: 900px;
+}
+
 
 #gymlist li {
-  padding-top: 18px;
+    padding-top: 18px;
+    list-style-type: circle;
+
 }
 
-#hero4 {
-  height: 650px;
+li a {
+  text-decoration: none;
+    color: #f7f8fb;
+    transition: color 500ms ease;
 }
-#gearPara {
-margin: 10px 70px 10px 70px;
+
+li a:hover {
+  text-decoration: none;
+    color: #6EC6E1;
+}
+
+
+/*GEAR HERO 4*/
+
+#hero4 {
+    height: 650px;
+}
+
+.gearPara {
+    margin: 10px 70px 25px 70px;
 }
 
 #gearimg {
-  height: 100px;
-  width: 100%;
-  margin: 50px 0px 5px 0px;
+    height: 100px;
+    width: 100%;
+    margin: 50px 0px 5px 0px;
 }
 
-#mainHeader {
-padding: 25 0 50 0;
+#gearimg:hover {
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+/*EVENTS HERO*/
+
+#hero5 {
+    background-image: url('Images/Events.jpg');
+    height: 900px;
+    padding-left: 5%;
+}
+
+#eventHeader {
+    margin-bottom: 5%;
+}
+
+#hero6 {
+  height: 700px;
+  text-align: center;
+  background-color: black;
+}
+
+#profileimg {
+background-position: center;
+border-radius: 50%;
+height: auto;
+width: 150px;
+padding-bottom: 10px;
+}
+#blogpara {
+  line-height: 2em;
+  letter-spacing: .2em;
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  padding-bottom: 25px;
+}
+
+footer {
+  text-align: center;
+  margin: 0 auto;
+  background-color: #f7f8fb
+}
+
+#copyright {
+  padding: 1.2em 0em 1.2em 0em;
+}
+
+small i {
+  padding: 0em .2em .2em .2em;
 }
