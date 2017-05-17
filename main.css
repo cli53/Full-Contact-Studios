@@ -29,6 +29,20 @@ body {
     line-height: 2em;
     letter-spacing: .2em;
 }
+.iconlinks {
+  color: black;
+  text-decoration: none;
+}
+.iconlinks:hover {
+  text-decoration: none;
+  color: #6EC6E1;
+}
+
+.iconlinks:focus {
+  text-decoration: none;
+  color:#6EC6E1;
+}
+
 /* LANDING HERO 1*/
 
 #hero1 {
