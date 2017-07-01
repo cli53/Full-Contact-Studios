@@ -18,17 +18,25 @@
 
 
 
+
   </head>
 
   <body>
+
     <div id="hero1" class="hero jumbotron-fluid">
-      <h1 class="herotitles display-2" >Full Contact Studios</h1>
-      <p class="lead hero1para">Muay Thai in NYC</p>
+      <h1 class="herotitles display-2" id="logo">Full Contact Studios</h1>
+      <h2>Welcome to Muay Thai in NYC</h2>
       <p class="lead hero1para">Navigator for gyms, equipment, and resources</p>
-      <p class="lead">
-        <!--<a class="btn btn-danger btn-md text-uppercase" id="hero1btn" href="#" role="button">Learn more</a>-->
-        <button id="readMeButton" href="#info" class="btn btn-outline-info">Read More</button>
-      </p>
+      <button id="readMeButton" href="#info" class="btn btn-outline-info">Read More</button>
+      <!--Scroll Down Button-->
+      <a href="#hero3">
+        <div class="containerscroll">
+          <!-- <h3>Scroll Down</h3> -->
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+        </div>
+      </a>
     </div>
     <!--Nav bar-->
     <nav class="navbar navbar-toggleable-md navbar-light bg-faded sticky-top">
@@ -57,9 +65,21 @@
             <a class="nav-link" href="#profileimg">Contact</a>
           </li>
         </ul>
+        <!--Icon Navbar-->
+        <ul class="nav navbar-nav ml-auto">
+          <div class="wrapperNav"><small>
+        <a href=""><i class="fa fa-2x fa-facebook-square"></i></a>
+        <a href=""><i class="fa fa-2x fa-twitter-square"></i></a>
+        <a href=""><i class="fa fa-2x fa-instagram"></i></a>
+        <a href=""><i class="fa fa-2x fa-snapchat-square"></i></a>
+      </small></div>
+        </ul>
+
       </div>
     </nav>
+
     <!--Mission Section-->
+
     <div id="hero3" class="hero jumbotron-fluid">
 
       <h1 class="herotitles display-3">Our Mission<h1>
@@ -69,7 +89,7 @@
             To do this, we rely on our passionite community to help to give you the most relevant information. <p class="lead">Besides an active donation panel, all proceeds
             will benefit charities for rural Muay Thai gyms in Thailand that home children from impoverished communities.</p>
 
-      </div>
+ </div>
 <!--INFO Section -->
 <div id="info" class="jumbotron-fluid">
   <section class="container-fluid">
@@ -77,31 +97,32 @@
       <div class="row mb-5 pb-3">
         <div class="col-sm-4 infoContent">
            <a class="iconlinks" href="#hero2" alt="Gyms" title="Find Your Gym"><img class="infoimg" src="Images/boxingbag.svg" alt="Gym Image">
-          <h2 class="infoTitles">Gyms</h2></a>
-          <p class="infoPara">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
-             Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
-             Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+          <h2 class="infoTitles">Gyms</h2>
+          <p class="infoPara">Find  the best gym that fits your fitness culture, time schedule, and location. As a community, we provide honest
+          and informative insights within the membership space. You'll know exactly whos training you, how many classes are offered, and what are the
+        price ranges that best suits you. The objective is to find a match for your Muay Thai goals! </p></a>
            </div>
              <div class="col-sm-4 infoContent">
                <a class="iconlinks" href="#hero4"><img class="infoimg" src="Images/gear1.svg" alt="Gear Image">
-               <h2 class="infoTitles">Equipment</h2></a>
-               <p  class="infoPara">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
-                 Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
-                 Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+               <h2 class="infoTitles">Equipment</h2>
+               <p  class="infoPara"> Access to reliable equipment by trusted vendors from New York City or Thailand. You'll find the latest
+               posts on discounts and reviews on various gear so you'll never left out of a great product. Finding the right gloves for you is just
+             as important as picking the right gym! </p></a>
              </div>
              <div class="col-sm-4 infoContent">
                 <a class="iconlinks" href="#hero5"><img class="infoimg" src="Images/events1.svg" alt="Event Image">
-               <h2 class="infoTitles">Events</h2></a>
-               <p class="infoPara">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
-                 Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
-                 Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+               <h2 class="infoTitles">Events</h2>
+               <p class="infoPara">Watch or participate in events around the city to support your team! There's no experience like watching
+               a competition in person to absorb the atmosphere. You'll receive notifications on upcoming fight nights, discounted
+               ticket prices, and fighter information. You'll watch many videos but you'll never forget the fights you see in person. </p></a>
              </div>
            </div>
   </section>
 </div>
+</div>
 <!--Gym  Section-->
         <div id="hero2" class="hero jumbotron-fluid">
-          <h1 class="herotitles display-3">Step 1: Find your gym</h1>
+          <h1 class="herotitles display-3">Step One: Find your gym</h1>
       <p class="lead"><strong>It's a difficult choice, but we're here to help!</strong></p>
       <br class="m-y-md">
       <p class="lead">Top Muay Gyms in NYC to check out:</p>
@@ -120,31 +141,33 @@
     <div id="hero4" class="jumbotron-fluid">
       <section class="container-fluid">
         <img id="gearimg" src="Images/helmet.svg" alt="headgear">
-        <h1 id="infoHeader" class="text-center  display-3">Step 2: SUIT UP!<h2>
+        <h1 id="infoHeader" class="text-center  display-3">Step Two: Gear up<h2>
 
       <div class="row mb-5 pb-3">
         <div class="col-sm-6 infoContent">
            <a class="iconlinks" href="#"><img class="infoimg" src="Images/gear.svg" alt="Gym Image">
-          <h2 class="infoTitles">New York Vendors</h2></a>
+          <h2 class="infoTitles">New York Vendors</h2>
           <p class="gearPara infoPara">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
              Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
-             Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+             Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p></a>
              <a href="#" class="btn btn-primary">Go somewhere</a>
            </div>
 
              <div class="col-sm-6 infoContent">
                 <a class="iconlinks" href="#"><img class="infoimg" src="Images/events.svg" alt="Event Image">
-               <h2 class="infoTitles">International Vendors</h2></a>
+               <h2 class="infoTitles">International Vendors</h2>
                <p  class="gearPara infoPara">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
                  Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
-                 Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                 Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p></a>
                  <a href="#" class="btn btn-primary">Go somewhere</a>
              </div>
            </div>
                 </section>
+
            <!--Events-->
+
            <div id="hero5" class="hero jumbotron-fluid">
-             <h1  class="herotitles display-3">Step 3: Attend Events</h1>
+             <h1  class="herotitles display-3">Step Three: Attend Events</h1>
         <p class="lead">Cheer your team on and watch some of New York's dedicated fighters.</p>
         <p class="lead"> To embody the fighter you wish to be, watching events will be second to none in the excitement and knowledge gained from observing your favorite contenders. Whether you're rooting for red or blue, you'll leave with a deeper appreciation.
     </div>
@@ -152,10 +175,16 @@
     <div id="hero6" class="hero jumbotron-fluid">
       <h1 class="herotitles display-3">Thank You!</h1>
       <img id="profileimg" src="Images/portraitBW.png" alt="portrait">
-      <p>Chris Li</p>
+      <p id="myName">Chris Li</p>
       <p id="profileheadertwo"><i>Founder of Full Contact Studios</i></p>
       <p id="blogpara">Stay updated on the latest information and reviews all things Muay Thai in NYC. You'll find the most recent discounts and deals on memberships and gear as well! As a member, you'll also get the opportunity to help build better gyms for children
         in Thailand.</p>
+
+      <div class="form-group">
+        <label id="emailLabel" for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="emailbox" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
       <button id="subscribe" class="btn btn-outline-info">Subscribe!</button>
 
     </div>
@@ -180,6 +209,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
     <!--ScrollReveal by jlmakes-->
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 
