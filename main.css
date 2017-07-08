@@ -54,7 +54,7 @@ body {
 
 #hero1 {
     background-image: url('Images/hero1.jpg');
-    height: 600px;
+    height: 645px;
     animation: fadeIn 3s ease-in-out 1 forwards;
     padding-left: 5%;
 }
@@ -78,7 +78,7 @@ body {
   width: 24px;
   height: 24px;
   padding-left: 45%;
-  padding-top: 6em;
+  padding-top: 2em;
 }
 
 .chevron {
@@ -210,11 +210,11 @@ body {
 }
 
 .infoPara {
-    font-size: 0.7em;
+    font-size: 0.75 em;
     margin: 1em;
     text-align: center;
     hyphens: auto;
-    font-weight: 400;
+    font-weight: 300;
     /*letter-spacing: 0.1em;*/
 }
 
@@ -328,7 +328,7 @@ padding-bottom: 10px;
   margin: auto;
 }
 #emailLabel {
-  font-size: 22px;
+  font-size: 2em;
 }
 #subscribe {
   margin-bottom: 2em;
